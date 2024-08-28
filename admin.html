@@ -1,0 +1,53 @@
+<!--Biometrics Attendance System -->
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Biometrics Attendance System | Admin</title>
+        <link rel="shortcut icon" href="pup logo 1.png"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="image-section">
+                <div class="columns is-gapless is-fullheight is-vcentered">
+                    <div class="column is-hidden-mobile">
+                        <!-- Empty column to maintain structure (optional) -->
+                    </div>
+                    <div class="column is-4-desktop is-offset-8-desktop is-full-mobile">
+                        <div class="login-section box">
+
+                            <div class="header-form has-text-centered">
+                                <img class="puplogo" src="pup logo 1.png"></img>
+                                <h2 class="title has-text-white has-text-centered">Biometrics Attendance System</h2>
+                                <p class="subtitle has-text-white is-size-7 has-text-weight-light">Please sign in to start your session</p> 
+                            </div>
+
+                            <form action="/login" method="POST">
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input" type="text" placeholder="Username" name="username" required>
+                                    </div>
+                                </div>
+                               
+                                <div class="field">
+                                    <div class="control">
+                                        <input class="input" type="password" placeholder="Password" name="password" required>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="control">
+                                        <button class="button is-link" type="submit">Sign In</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
