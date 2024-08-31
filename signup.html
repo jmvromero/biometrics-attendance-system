@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biometrics Attendance System</title>
+    <link rel="shortcut icon" href="pup logo 1.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script defer src="webcam.js"></script>
+</head>
+
+<header>
+    <div class="wrapper">
+        <nav class="navbar header-signup" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="main.html"><img class="puplogo-signup" src="pup logo 1.png"></img></a>
+                <p class="navbar-item header-title">PUP Biometrics Attendance System</p>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="wrapper"> 
+        <div class="columns is-gapless is-fullheight is-vcentered">
+          
+            <div class="column is-12 is-full-mobile">
+                <div class="photo-box box">
+                    <div class="camera-container-signup">
+                    <video id="video" class="takephoto" autoplay></video>
+                    <canvas id="canvas" style="display:none;"></canvas>
+                    <div class="block"></div>
+                    <a class="button is-link" type="submit" href="signup2.html">Take photo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

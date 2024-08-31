@@ -15,14 +15,13 @@ body, html {
     width: 100%; 
 }
 
-.image-blur {
-    background: rgba(229, 229, 229, 0.458);
+.image-section-user {
+    background: linear-gradient(to right, rgba(229, 229, 229, 0.458), rgba(229, 229, 229, 0.458)), url('pup background 1.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
     height: 100vh;
     position: relative;
-    width: 100%;
-    z-index: 1;
+    width: 100%; 
 }
 
 .login-section-admin {
@@ -46,12 +45,28 @@ body, html {
     margin-bottom: 10px;
 }
 
+.header-signup {
+    background: #FFD425;
+}
+
+.header-title {
+    color: black;
+}
+
 .puplogo {
     border-radius: 50%;
     height: 88px;
     width: 88px;
 }
 
+.puplogo-signup {
+    border-radius: 50%;
+}
+
+.photo-box {
+    background-color: #F5F5F5;
+    height: calc(100vh - 3.25rem);
+} 
 
 .camera-container {
     display: flex;
@@ -63,9 +78,29 @@ body, html {
     border: 2px solid #ccc;
     border-radius: 8px;
     background-color: #f9f9f9;
+
+}
+
+.camera-container-signup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    height: 94%;
 }
 
 video {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: black;
+}
+
+.takephoto {
     border: 1px solid #ccc;
     border-radius: 8px;
     background-color: black;
