@@ -1,53 +1,60 @@
-<!--Biometrics Attendance System -->
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Biometrics Attendance System</title>
-        <link rel="shortcut icon" href="pup logo 1.png"/>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
-        <link rel="stylesheet" href="style.css">
-        <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="image-section">
-                <div class="columns is-gapless is-fullheight is-vcentered">
-                    <div class="column is-hidden-mobile">
-                        <!-- Empty column to maintain structure (optional) -->
-                    </div>
-                    <div class="column is-4-desktop is-offset-8-desktop is-full-mobile">
-                        <div class="login-section box">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Biometrics Attendance System</title>
+    <link rel="shortcut icon" href="pup logo 1.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <script>
+        function verifyCheckbox(event) {
+            const checkbox = document.getElementById('termsCheckbox');
+            if (!checkbox.checked) {
+                alert('You must agree to the Terms of Use and Privacy Statement before proceeding.');
+                event.preventDefault(); // Prevent the link from being followed
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="image-section">
+            <div class="columns is-gapless is-fullheight is-vcentered">
+                <div class="column is-hidden-mobile">
+                    <!-- Empty column to maintain structure (optional) -->
+                </div>
+                <div class="column is-4-desktop is-offset-8-desktop is-full-mobile">
+                    <div class="login-section-admin box">
+                        <div class="header-form has-text-centered">
+                            <img class="puplogo" src="pup logo 1.png"></img>
+                            <h2 class="title has-text-white has-text-centered">Biometrics Attendance System</h2>
+                            <p class="subtitle has-text-white is-size-7 has-text-weight-light">Please sign in to start your session</p> 
+                        </div>
 
-                            <div class="header-form has-text-centered">
-                                <img class="puplogo" src="pup logo 1.png"></img>
-                                <h2 class="title has-text-white has-text-centered">Biometrics Attendance System</h2>
-                                <p class="subtitle has-text-white is-size-7 has-text-weight-light">Please sign in to start your session</p> 
+                        <div class="button-wrapper has-text-centered">
+                            <div class="field">
+                                <div class="control">
+                                    <a class="button is-link is-fullwidth" id="userButton" type="submit" href="user.html" onclick="verifyCheckbox(event)">User</a>
+                                </div>
                             </div>
 
-                            <div class="button-wrapper has-text-centered">
-                                <div class="field">
-                                    <div class="control">
-                                        <a class="button is-link is-fullwidth" type="submit" href="user.html">User</a>
-                                    </div>
+                            <div class="field">
+                                <div class="control">
+                                    <a class="button is-success is-fullwidth" id="adminButton" type="submit" href="admin.html" onclick="verifyCheckbox(event)">Admin</a>
                                 </div>
-
-                                <div class="field">
-                                    <div class="control">
-                                        <a class="button is-success is-fullwidth" type="submit" href="admin.html">Admin</a>
-                                    </div>
-                                </div>
-
-                                <label class="checkbox" style="color:white;">
-                                    <input type="checkbox"/>
-                                    By using this service, you understood and agree to the <a class="termsofuse" href="#" style="text-decoration: underline;">Terms of Use</a> and <a class="privacystatement" href="#" style="text-decoration: underline;">Privacy Statement</a>.
-                                </label>
                             </div>
+
+                            <label class="checkbox" style="color:white;">
+                                <input type="checkbox" id="termsCheckbox"/>
+                                By using this service, you understood and agree to the <a class="termsofuse" href="#" style="text-decoration: underline;">Terms of Use</a> and <a class="privacystatement" href="#" style="text-decoration: underline;">Privacy Statement</a>.
+                            </label>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </body>
+    </div>
+</body>
 </html>

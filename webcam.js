@@ -27,4 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('One or more elements (capture, canvas, video) are not found in the DOM.');
     }
 });
+
+
     
